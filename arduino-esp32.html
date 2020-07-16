@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<!-- Definição da linguagem para português, afim de ser possível a utilização de plugins que utilizem este atributo (tais como tradutores), "lfr" Significa "left to right" que é a forma como a lingua portuguesa é escrita -->
+
+<head>
+  <meta charset="utf-8"> <!-- Import dos caracteres e simbolos de todas as linguagens -->
+  <title>Home Security</title> <!-- Título da página web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Usado para controlar o tamanho da viewport, a fim de a página web ser optimizada para dispositivos móveis -->
+  <link rel="stylesheet" href="global.css"> <!-- Import do Css da barra de navegação e do footer -->
+  <link rel="stylesheet" href="arduino-esp32.css"> <!-- Import Css da página arduino/esp32 -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> <!-- Fonte 'Raleway' -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Import to icone de 3 barras horizontais -->
+  <script src="global.js"></script> <!-- Import do Javascript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Icone de download -->
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <!-- O tipo "checkbox" foi utilizado em substituição ao "onclick" que utilizaria javascript, sendo que na prática estamos a clicar num checkbox invisivel em vez do icon de 3 barras horizontais -->
+    <label for="check" class="checkbtn">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+    <!-- Barra de navegação -->
+    <a id="logo" href="index.html">Home Security</a>
+    <ul>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="website.html">Website</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="website_html.html">HTML</a>
+          <a href="website_css.html">CSS</a>
+          <a href="website_javascript.html">Javascript</a>
+        </div>
+      </div>
+      <li><a class="active" href="arduino-esp32.html">Arduino/Esp32</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="http://homesecuritycam.ddns.net">Login</a></li>
+    </ul>
+    <!-- // Barra de navegação // -->
+  </nav>
+  <section>
+    <h1 class="header">Lista de Materiais</h1>
+    <ol class="lista">
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32696412561.html?spm=a2g0s.9042311.0.0.2742b90a17LG9l">Arduino Uno</a>
+      </li>
+      <li><a target="_blank"
+          href="https://www.aliexpress.com/item/32992663411.html?spm=a2g0o.productlist.0.0.5dbb81c9NjQteA&algo_pvid=bc736eac-fe0d-4b36-9294-d9a726453292&algo_expid=bc736eac-fe0d-4b36-9294-d9a726453292-0&btsid=0ab6f82115917849298908709e78c7&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Esp32-Cam
+      </li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32617951363.html?spm=a2g0o.productlist.0.0.2a526b51xJbduu&algo_pvid=869a20e2-a23e-4df1-81a5-1b6dab65976f&algo_expid=869a20e2-a23e-4df1-81a5-1b6dab65976f-9&btsid=0ab6f8ad15935327640802779e0800&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Conversor
+          FTDI</a></li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32656552625.html?spm=a2g0s.9042311.0.0.2742b90aLowVmS">Breadboard</a>
+      </li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/2041500641.html?spm=a2g0s.9042311.0.0.2742b90aD8NANt">Fios</a></li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32875360843.html?spm=a2g0s.9042311.0.0.2742b90amVji2O">Sensor PIR
+          (HC-SR501)</a></li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32820864697.html?spm=a2g0s.9042311.0.0.2742b90ajErQzl">Laser (ky-008)</a>
+      </li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32921738771.html?spm=a2g0s.9042311.0.0.2742b90aJp8PgS">Receptor do
+          laser</a></li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/4000250046165.html?spm=a2g0o.productlist.0.0.4ff1670bY5aC3V&algo_pvid=d95a2f0c-3322-40c6-94ca-0439bda0bd41&algo_expid=d95a2f0c-3322-40c6-94ca-0439bda0bd41-1&btsid=0ab6fa8115917865649271358ee584&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Pilha
+          9v</a></li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/32955065577.html?spm=a2g0s.9042311.0.0.2742b90a6H0kMo">Piezo buzzer</a>
+      </li>
+      <li><a target="_blank"
+          href="https://pt.aliexpress.com/item/1879700082.html?spm=a2g0s.9042311.0.0.2742b90aJp8PgS">Teclado matricial
+          de membrana 3x4 (keypad)</a></li>
+    </ol>
+    <h1 class="header">Arduino</h1><br><br><br>
+    <h1 class="titulo">Arduino Uno Pinout:</h1><br><br><br>
+    <img style="margin-left: 30%;" src="arduino.jpg"><br><br><br>
+    <p class="paragrafo"><b>IOREF</b> - Fornece uma tensão de referência para que shields possam selecionar o tipo de
+      interface apropriada, dessa forma shields que funcionam com a placas Arduino que são alimentadas com 3,3V podem se
+      adaptar para ser utilizados em 5V.</p><br>
+    <p class="paragrafo"><b>RESET</b> - pino conectado a pino de RESET do microcontrolador. Pode ser utilizado para um
+      reset externo da placa Arduino.</p><br>
+    <p class="paragrafo"><b>3.3 V </b> - Fornece tensão de 3,3V. para alimentação de shield e módulos externos. Corrente
+      máxima de 50 mA.</p><br>
+    <p class="paragrafo"><b>5 V </b> - Fornece tensão de 5 V para alimentação de shields e circuitos externos.</p><br>
+    <p class="paragrafo"><b>GND</b> - pinos de referência, terra.</p><br>
+    <p class="paragrafo"><b>VIN </b> - pino para alimentar a placa através de shield ou bateria externa. Quando a placa
+      é alimentada através do conector Jack, a tensão da fonte estará nesse pino.</p><br>
+    <p class="paragrafo"><b>PWM </b> - 3,5,6,9,10 e 11 podem ser usados como saídas PWM de 8 bits através da função
+      analogWrite().</p><br>
+    <p class="paragrafo"><b>Comunicação serial</b> - 0 e 1 podem ser utilizados para comunicação serial. Deve-se
+      observar que estes pinos são ligados ao microcontrolador responsável pela comunicação USB com o PC.</p><br>
+    <p class="paragrafo"><b>Interrupção externa</b> - 2 e 3 podem ser configurados para gera uma
+      interrupção externa, através da função attachInterrupt().</p><br><br><br><br>
+    <h1 class="titulo">Código:</h1><br><br><br>
+    <img style="margin-left: 19.5%;" src="codigo.png"><br>
+    <a href="Arduino Código + Bibliotecas.rar" download><button class="btn"><i class="fa fa-download"></i> Baixar
+        Código</button></a>
+    <h1 class="titulo">Ligações:</h1><br><br><br>
+    <img style="margin-left: 20%;margin-bottom: 80px;" src="Layout.png">
+    <h1 class="titulo">Configuração:</h1><br><br><br>
+    <p class="paragrafo">Primeiramente é necessário adicionar a biblioteca do keypad ao arduino, caso contrário o mesmo
+      não reconhecerá as funções do utilizadas pelo mesmo. O ficheiro da bilblioteca encontra-se em conjunto com o
+      código, disponível para download acima.</p><br><br>
+    <img style="margin-left: 33%;margin-bottom: 25px;" src="adicionarbiblioteca1.png">
+    <p class="paragrafo">Vá até á localização onde extraiu o ficheiro e selecione a pasta "keypad"</p><br>
+    <img style="margin-left: 28.6%;margin-bottom: 25px;" src="adicionarbiblioteca2.png">
+    <p class="paragrafo">Após isso, conecte o seu arduino, envie o código e já está. Certifique-se que selecionou a
+      porta correspondente ao arduino tal como a placa correta.</p><br>
+    <img class="center" style="margin-bottom:100px;" src="selecionarplaca.png">
+    <h1 class="titulo">Demonstração:</h1><br><br><br>
+    <iframe style="margin-left: 26%;" width="840" height="500" src="https://www.youtube.com/embed/ELFdJejhuw4"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h1 class="header">Esp32 Cam</h1><br><br><br>
+    <h1 class="titulo">Esp32 Camera Pinout:</h1><br><br><br><br>
+    <a href="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/03/ESP32-CAM-pinout-new.png?ssl=1"
+      target="_blank"><img style="margin-left: 22%;margin-bottom: 70px;" src="esp32_pinout.png"></a><br><br><br>
+    <p class="paragrafo">Existem três pinos GND e dois pinos para alimentação: <span id="alimentacao">3,3V</span> ou
+      <span id="alimentacao">5V</span>.<br><br><span id="GPIO">GPIO 1</span> e <span id="GPIO">GPIO 3</span> são pinos
+      seriais (TX e RX respetivamente) e são utilizados para dar upload ao código.<br><br>A melhor maneira de dar upload
+      ao código é através de um <a target="_blank" class="link"
+        href="https://pt.aliexpress.com/item/32617951363.html?spm=a2g0o.productlist.0.0.2a526b51xJbduu&algo_pvid=869a20e2-a23e-4df1-81a5-1b6dab65976f&algo_expid=869a20e2-a23e-4df1-81a5-1b6dab65976f-9&btsid=0ab6f8ad15935327640802779e0800&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Conversor
+        FTDI.</a><br><br>O esp32-cam possui um led que pode servir como flash ao tirar fotografias. Esse led está
+      internamente conectado ao <span id="GPIO">GPIO 4</span>.</p><br><br><br><br>
+    <h1 class="titulo">Código:</h1>
+    <a href="CameraWebServer_login.rar" download><button class="btn"><i class="fa fa-download"></i> Baixar
+        Código</button></a>
+    <p class="paragrafo">Para o código do esp32 foi utilizado o exemplo já existente no arduino IDE. Porém algumas
+      alterações são necessárias para o funcionamento do servidor web:</p><br><br>
+    <img class="center" src="exemploesp32.png"><br><br><br>
+    <p class="paragrafo">Comente o primeiro #define e descomente o último de forma a selecionar o modelo de câmera
+      correto que vai ser utilizado neste projeto.</p><br><br><br>
+    <img style="margin-left: 33%;" src="modelo_camera.png"><br><br><br>
+    <p class="paragrafo">Insira o nome (ssid) e a palavra passe do Wifi que está a utilizar.</p><br><br><br>
+    <img style="margin-left: 33%;" src="wifi.png"><br><br><br>
+    <p class="paragrafo">O servidor web está protegido com uma palavra pass, que pode ser alterada (ou removida). Para
+      isso, selecione o separador "camera_index.h" e selecione tudo dentro do primeiro conjunto de { }.</p><br><br>
+    <img style="margin-left: 25%;" src="camera_index.png"><br><br><br>
+    <p class="paragrafo">Após isso, vá ao site <a class="link" target="_blank"
+        href="https://gchq.github.io/CyberChef/#recipe=Find_/_Replace(%7B'option':'Regex','string':','%7D,'',true,false,false,false)Remove_whitespace(true,false,true,false,false,false)From_Hex('0x')Gunzip()">CyberChef</a>
+      para descriptografar o html do servidor web. As opções necessárias para descriptografar o código já estão
+      inseridas no link para o CyberChef, apenas copie o código e cole no input.</p><br><br><br>
+    <img style="margin-left: 20.5%;max-width: 60%;" src="CyberChef1.png"><br><br><br>
+    <p class="paragrafo">A seguir copie o código do Output e aceda a este link do <a class="link" target="_blank"
+        href="https://gchq.github.io/CyberChef/#recipe=Gzip('Dynamic%20Huffman%20Coding','index.html.gz','',false)To_Hex('0x',0)Split('0x',',0x')">CyberChef</a>
+      para alterar e voltar a criptografar o código (a criptografia é necessária pois o arduino não lê linguagens web no
+      seu estado normal da forma que o exemplo foi criado).</p><br><br><br>
+    <img style="margin-left: 35%;" src="alterar_pass.png"><br><br><br>
+    <p class="paragrafo">A varíavel "pass1" é a responsável pelo armazenamento da palavra passe, e está codificada em
+      base64 para um maior nível de segurança. Elimine a palavra passe dentro dos " " e aceda ao website <a class="link"
+        target="_blank" href="https://www.base64encode.org">Base64</a> para codificação/descodificação.</p><br><br><br>
+    <img style="margin-left: 32%;" src="base64.png"><br><br><br>
+    <p class="paragrafo">Digite a palavra passe que desejar e clique em "Encode" para codificar a palavra passe em
+      base64. Copie o resultado da codificação e substitua no código do CyberChef. Após isso, copie o código do OUTPUT
+      (menos a primeira vírgula) e substitua pelo código existente no esp32.<br><br>Altere também o link do website em
+      "window.location" para o seu IP. Depois volte ao CyberChef e clique nos dois últimos sinais de proibido e copie o
+      valor da "length".</p><br><br>
+    <img style="margin-left: 20%;max-width: 60%;" src="CyberChef2.png"><br><br><br>
+    <p class="paragrafo">Substitua esse valor pelo existente no código do esp32 e já pode dar upload do código.</p>
+    <br><br>
+    <img style="margin-left: 35%;" src="length.png"><br><br><br>
+    <br>
+    <h1 class="titulo">Configuração:</h1><br><br><br>
+    <p class="paragrafo">Antes de dar upload no código é necessário instalar a placa esp23 no arduino IDE. Para isso vá
+      a Ficheiro>Preferências</p><br><br>
+    <img style="margin-left: 42%;margin-bottom: 60px;" src="adicionaresp1.png">
+    <p class="paragrafo">Após isso, insira o link "https://dl.espressif.com/dl/package_esp32_index.json" em "URL
+      Adicionais do Gestor de Placas" e pressione "OK".</p><br><br>
+    <img style="margin-left: 28%;margin-bottom: 25px;" src="adicionaresp2.png">
+    <p class="paragrafo">Vá a Ferramentas e selecione a placa "AI Thinker ESP32-CAM".</p><br><br>
+    <img style="margin-left: 35%;" src="placa.png"> <br><br><br>
+    <p class="paragrafo">Conecte o esp32-cam ao FTDI da seguinte maneira de forma a possibilitar o upload de dados:</p>
+    <br><br><br>
+    <img style="margin-left: 30%;margin-bottom: 60px;" src="FTDI.png">
+    <p class="paragrafo">Após clicar no botão de upload no arduino IDE, clique no botão de reset do esp32 quando
+      aparecer "Conecting".</p><br><br><br>
+    <img style="margin-left: 19.2%;" src="esp32_conexao.png"><br><br><br>
+    <p class="paragrafo">Quando terminar o upload de dados, retire os fios utilizados para chanfrar o <span
+        id="GND">GND</span> ao <span id="GPIO">GPIO 0</span>, vá ao monitor serial e pressione novamente o<br><br> botão
+      de rest do esp32. Aceda ao IP apresentado no monitor e o servidor web estará disponível para uso.</p><br><br><br>
+    <img style="margin-left: 30%;" src="webserver.png"><br><br><br><br>
+    <h1 class="titulo">No-IP:</h1><br><br><br>
+    <p class="paragrafo">Para que o servidor web do esp32 cam possa ser acedido fora da rede local, foi utilizado o
+      website <a class="link" target="_blank" href="https://www.noip.com">No-IP</a> para criar um DNS dinâmico que se
+      conecta ao endereço IPV4 da rede local. O nome dado ao host foi "homesecuritycam" e está alojado no link <a
+        class="link" target="_blank"
+        href="http://homesecuritycam.ddns.net">http://homesecuritycam.ddns.net</a>.<br><br>Abaixo está o vídeo que
+      mostra como criar um servidor virtual no router (algo que é necessário para que o No-IP tenha algo para
+      redirecionar) e como criar um host no site No-IP.</p><br><br>
+    <iframe style="margin-left: 26%;" width="840" height="500" src="https://www.youtube.com/embed/na-jyyerjHM"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p class="footer">Website criado por Diogo Bandeira Barbosa</p>
+  </footer>
+
+</body>
+
+</html>

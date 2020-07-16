@@ -1,0 +1,73 @@
+ol.lista{
+    list-style: inherit;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: 20.5%;
+}
+.lista a{
+    color: black;
+}
+
+.lista a:hover{
+    color:rgb(69, 160, 196);
+    text-decoration: underline;
+}
+
+.titulo{
+    margin-left: 19.5%;
+    font-size: 26px;
+}
+
+.center {
+    display: block;
+    margin-left: 30%;
+    transition: all .5s;
+}
+
+@media (max-width: 500px){
+    .center{
+        margin-left: 70px;
+        max-width: 360px;
+    }
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 50px 0px 60px 19.5%;
+  }
+
+.btn:hover {
+    background-color: rgb(49, 164, 209);
+}
+
+#alimentacao{
+    border-radius: 7px;
+    background: red;
+    padding: 5px; 
+    width: 20px;
+    height: 20px; 
+    color: white;
+}
+
+#GPIO{
+    border-radius: 7px;
+    background: #369;
+    padding: 6px; 
+    width: 20px;
+    height: 20px; 
+    color: white;
+}
+
+#GND{
+    border-radius: 7px;
+    background: black;
+    padding: 6px; 
+    width: 20px;
+    height: 20px; 
+    color: white;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<!-- Definição da linguagem para português, afim de ser possível a utilização de plugins que utilizem este atributo (tais como tradutores), "lfr" Significa "left to right" que é a forma como a lingua portuguesa é escrita -->
+
+<head>
+    <meta charset="utf-8"> <!-- Import dos caracteres e simbolos de todas as linguagens -->
+    <title>Home Security</title> <!-- Título da página web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Usado para controlar o tamanho da viewport, a fim de a página web ser optimizada para dispositivos móveis -->
+    <link rel="stylesheet" href="global.css"> <!-- Import do Css da barra de navegação e do footer -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> <!-- Fonte 'Raleway' -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Import to icone de 3 barras horizontais -->
+    <script src="global.js"></script> <!-- Import do Javascript -->
+</head>
+
+<body>
+    <nav style="z-index: 1;">
+        <input type="checkbox" id="check">
+        <!-- O tipo "checkbox" foi utilizado em substituição ao "onclick" que utilizaria javascript, sendo que na prática estamos a clicar num checkbox invisivel em vez do icon de 3 barras horizontais -->
+        <label for="check" class="checkbtn">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <!-- Barra de navegação -->
+        <a id="logo" href="index.html">Home Security</a>
+        <ul>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="website.html">Website</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="website_html.html">HTML</a>
+                    <a href="website_css.html">CSS</a>
+                    <a href="website_javascript.html">Javascript</a>
+                </div>
+            </div>
+            <li><a href="arduino-esp32.html">Arduino/Esp32</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="http://homesecuritycam.ddns.net">Login</a></li>
+        </ul>
+    </nav>
+    <!-- // Barra de navegação // -->
+    <section>
+        <h1 style="margin-bottom: 90px;font-size: 50px;" class="header">Cascading Style Sheets (CSS)</h1>
+        <p class="paragrafo">CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos
+            escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site.
+            <br><br>Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.
+            Também pode criar tabelas, usar variações de layouts, ajustar imagens para as respectivas telas e assim
+            por diante.</p><br><br>
+        <h1 class="paragrafo">Css utilizado em todas as páginas:</h1><br><br><br>
+        <div style="margin-left: 19.5%;max-width:62%;margin-bottom: 70px;">
+            <script src="https://gist.github.com/Diogo-Barbosa-PAP/846ff15dfcb8bea31a2906abf9aa7935.js"></script>
+        </div>
+        <h1 class="paragrafo">Css da página inicial:</h1><br><br><br>
+        <div style="margin-left: 19.5%;max-width:62%;margin-bottom: 70px;">
+            <script src="https://gist.github.com/Diogo-Barbosa-PAP/142a478e6d4cee3ca77b04fee609778a.js"></script>
+        </div>
+        <h1 class="paragrafo">Css do separador arduino/esp32:</h1><br><br><br>
+        <div style="margin-left: 19.5%;max-width:62%;margin-bottom: 70px;">
+            <script src="https://gist.github.com/Diogo-Barbosa-PAP/7e57df2ee5dff0dac06e615d66c15d92.js"></script>
+        </div>
+    </section>
+
+    <footer style="margin-top: 328px;">
+        <p class="footer">Website criado por Diogo Bandeira Barbosa</p>
+    </footer>
+
+</body>
+
+</html>

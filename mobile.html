@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<!-- Definição da linguagem para português, afim de ser possível a utilização de plugins que utilizem este atributo (tais como tradutores), "lfr" Significa "left to right" que é a forma como a lingua portuguesa é escrita -->
+
+<head>
+  <meta charset="utf-8"> <!-- Import dos caracteres e simbolos de todas as linguagens -->
+  <title>Home Security</title> <!-- Título da página web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Usado para controlar o tamanho da viewport, a fim de a página web ser optimizada para dispositivos móveis -->
+  <link rel="stylesheet" href="global.css"> <!-- Import do Css da barra de navegação e do footer -->
+  <link rel="stylesheet" href="mobile.css"> <!-- Import do Css da página website -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> <!-- Fonte 'Raleway' -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Import to icone de 3 barras horizontais -->
+  <script src="global.js"></script> <!-- Import do Javascript -->
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <!-- O tipo "checkbox" foi utilizado em substituição ao "onclick" que utilizaria javascript, sendo que na prática estamos a clicar num checkbox invisivel em vez do icon de 3 barras horizontais -->
+    <label for="check" class="checkbtn">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+    <!-- Barra de navegação -->
+    <a id="logo" href="index.html">Home Security</a>
+    <ul>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="website.html">Website</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="website_html.html">HTML</a>
+          <a href="website_css.html">CSS</a>
+          <a href="website_javascript.html">Javascript</a>
+        </div>
+      </div>
+      <li><a href="arduino-esp32.html">Arduino/Esp32</a></li>
+      <li><a class="active" href="mobile.html">Mobile</a></li>
+      <li><a href="http://homesecuritycam.ddns.net">Login</a></li>
+    </ul>
+  </nav>
+  <!-- // Barra de navegação // -->
+
+  <!-- Footer 
+  <footer>
+    <p class="footer">Website criado por Diogo Bandeira Barbosa</p>
+  </footer>
+  // Footer // -->
+
+</body>
+
+</html>

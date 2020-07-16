@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<!-- Definição da linguagem para português, afim de ser possível a utilização de plugins que utilizem este atributo (tais como tradutores), "lfr" Significa "left to right" que é a forma como a lingua portuguesa é escrita -->
+
+<head>
+  <meta charset="utf-8"> <!-- Import dos caracteres e simbolos de todas as linguagens -->
+  <title>Home Security</title> <!-- Título da página web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Usado para controlar o tamanho da viewport, a fim de a página web ser optimizada para dispositivos móveis -->
+  <link rel="stylesheet" href="global.css"> <!-- Import do Css da barra de navegação e do footer -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> <!-- Fonte 'Raleway' -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Import to icone de 3 barras horizontais -->
+  <script src="global.js"></script> <!-- Import do Javascript -->
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <!-- O tipo "checkbox" foi utilizado em substituição ao "onclick" que utilizaria javascript, sendo que na prática estamos a clicar num checkbox invisivel em vez do icon de 3 barras horizontais -->
+    <label for="check" class="checkbtn">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+    <!-- Barra de navegação -->
+    <a id="logo" href="index.html">Home Security</a>
+    <ul>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="website.html">Website</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="website_html.html">HTML</a>
+          <a href="website_css.html">CSS</a>
+          <a href="website_javascript.html">Javascript</a>
+        </div>
+      </div>
+      <li><a href="arduino-esp32.html">Arduino/Esp32</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="http://homesecuritycam.ddns.net">Login</a></li>
+    </ul>
+  </nav>
+  <!-- // Barra de navegação // -->
+  <section>
+    <h1 style="margin-bottom: 90px;" class="header">Linguagens</h1>
+    <p class="paragrafo">Para a criação deste website, foi utilizado html, css e javascript. Para o html e css foi
+      consultado o website <a class="link" target="_blank" href="https://www.w3schools.com">W3Schools</a> e para o
+      javascript foi consultado predominantemente o website <a class="link" target="_blank"
+        href="https://stackoverflow.com">StackOverflow</a>.</p><br><br>
+    <p class="paragrafo">O software utilizado para o desenvolvimento do website foi o <a class="link" target="_blank"
+        href="https://code.visualstudio.com">Visual Studio Code</a>, que possui várias vantagens relativamente a outros
+      programas de edição de texto, sendo a maior delas a possibilidade de editar o texto num live server (ou seja ao
+      salvar as alterações no Visual Studio Code automaticamente salva na web e é possivel ver os resultados em tempo
+      real sem necessidade de dar refresh ao browser).</p><br><br>
+    <p class="paragrafo">Obviamente o website possui várias falhas, a não utilização de PHP é um fator crucial para a
+      desvalorização do website, porém penso que dentro das minha capacidades consegui criar um website que apresenta a
+      PAP de uma forma objetiva.</p><br><br>
+    <p class="paragrafo">O código utilizado será apresentado em cada dropdown-menu existente na barra de navegação e
+      está neste link <a class="link" href="https://github.com/Diogo-Barbosa-PAP/homesecurity.git"
+        target="_blank">GitHub</a> disponível para download.</p>
+  </section>
+
+
+  <footer style="margin-top: 328px;">
+    <p class="footer">Website criado por Diogo Bandeira Barbosa</p>
+  </footer>
+
+</body>
+
+</html>
